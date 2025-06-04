@@ -1,0 +1,141 @@
+/* Professional Theme */
+.theme-professional {
+  --primary-color: #2563eb;
+  --secondary-color: #64748b;
+  --accent-color: #3b82f6;
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --font-family: 'Inter', sans-serif;
+}
+
+.theme-professional .header {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+}
+
+.theme-professional .card {
+  background: var(--background-color);
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.theme-professional .accent {
+  color: var(--primary-color);
+}
+
+/* Creative Theme */
+.theme-creative {
+  --primary-color: #8b5cf6;
+  --secondary-color: #ec4899;
+  --accent-color: #f59e0b;
+  --background-color: #fefbff;
+  --text-color: #374151;
+  --font-family: 'Poppins', sans-serif;
+}
+
+.theme-creative .header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+.theme-creative .card {
+  background: linear-gradient(135deg, #faf5ff, #fdf2f8);
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.theme-creative .accent {
+  color: var(--primary-color);
+}
+
+/* Tech Theme */
+.theme-tech {
+  --primary-color: #10b981;
+  --secondary-color: #6b7280;
+  --accent-color: #34d399;
+  --background-color: #111827;
+  --text-color: #f9fafb;
+  --font-family: 'JetBrains Mono', monospace;
+}
+
+.theme-tech {
+  background-color: #0f172a;
+  color: var(--text-color);
+}
+
+.theme-tech .header {
+  background: var(--background-color);
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.theme-tech .card {
+  background: var(--background-color);
+  border-left: 4px solid var(--primary-color);
+  color: var(--text-color);
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.1);
+}
+
+.theme-tech .accent {
+  color: var(--accent-color);
+}
+
+/* Academic Theme */
+.theme-academic {
+  --primary-color: #4b5563;
+  --secondary-color: #9ca3af;
+  --accent-color: #6b7280;
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --font-family: 'Crimson Text', serif;
+}
+
+.theme-academic .header {
+  background: var(--primary-color);
+  color: white;
+}
+
+.theme-academic .card {
+  background: var(--background-color);
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.theme-academic .accent {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .theme-professional .card,
+  .theme-creative .card,
+  .theme-tech .card,
+  .theme-academic .card {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .theme-professional,
+  .theme-creative,
+  .theme-tech,
+  .theme-academic {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .header {
+    background: white !important;
+    color: black !important;
+    border-bottom: 2px solid black;
+  }
+  
+  .card {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+  }
+}
